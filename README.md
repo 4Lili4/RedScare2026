@@ -1,36 +1,38 @@
 # How to recreate our results
 
 ## Repository structure
-├── forked_data *folder containing the data for all the graphs. We use these in all_code_runnable.ipynb*
+```
+├── forked_data #folder containing the data for all the graphs. We use these in all_code_runnable.ipynb
 │   ├── bht.txt
 │   ├── common-1-1000.txt
 │   ├── ...
 │   ├── wall-z-3.txt
 │   └── wall-z-4.txt
-├── forked_doc *unchanged and unused from https://github.com/thorehusfeldt/algdes-labs/tree/master/red-scare*
+├── forked_doc #unchanged and unused from https://github.com/thorehusfeldt/algdes-labs/tree/master/red-scare
 │   └── ...
-├── forked_instance-generators *unchanged and unused from as forked_doc*
+├── forked_instance-generators #unchanged and unused from as forked_doc
 │   └── ...
-├── results *folder containing descriptive and timed results for each problem*
+├── results #folder containing descriptive and timed results for each problem
 │   ├── 01_alternate.csv
 │   ├── 02_few.csv
 │   ├── 03_many.csv
 │   ├── 04_none.csv
 │   └── 05_some.csv
-├── visualisations for Some *folder containing a script for visualising the Some-algorithm*
+├── visualisations for Some #folder containing a script for visualising the Some-algorithm
 │   ├── SomeViz.html
 │   ├── SomeViz.md
 │   └── SomeViz.py
-├── all_code_runnable.ipynb *main notebook*
+├── all_code_runnable.ipynb #main notebook
 ├── AlternateProblem.py
-├── env.yml *Conda environment-file*
+├── env.yml #Conda environment-file
 ├── FewProblem.py
 ├── ManyProblem.py
 ├── NoneProblem.py
-├── README.md *this file :-) *
-├── req.txt *pip environment-file*
-├── results.txt *results.txt following the format requested in algdes-labs/.../report.pdf*
+├── README.md #this file :-) 
+├── req.txt #pip environment-file
+├── results.txt #results.txt following the format requested in algdes-labs/.../report.pdf
 └── SomeProblem.py
+```
 
 
 ## RedScare environment
