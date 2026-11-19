@@ -31,9 +31,9 @@ def read_graph_none(path):
                 graph[u][v] = 1
                 graph[v][u] = 1
 
-    return graph, s, t, red, n
+    return graph, s, t, red, n, m
 
-def bfs_none(res_graph, source='s', sink='t', red=None):
+def bfs_none(graph_type, graph, source='s', sink='t', red=None, m=None):
     visited = {source}
     pointer = {source: None}
     reachable = deque([source])
@@ -41,7 +41,7 @@ def bfs_none(res_graph, source='s', sink='t', red=None):
     while reachable:
         u = reachable.popleft()
 
-        for v, capacity in res_graph[u].items():
+        for v, capacity in graph[u].items():
             if v not in visited:
                 visited.add(v)
                 pointer[v] = (u, capacity)

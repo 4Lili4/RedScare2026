@@ -26,17 +26,17 @@ def read_graph_alternating(path):
                 graph[u][v] = 1
                 graph[v][u] = 1
 
-    return graph, s, t, red, n
+    return graph, s, t, red, n, m
 
 
-def bfs_alternating(res_graph, source, sink, red=None):
+def bfs_alternating(graph_type, graph, source, sink, red=None, m=None):
     visited = {source}
     reachable = deque([source])
 
     while reachable:
         u = reachable.popleft()
 
-        for v, _ in res_graph[u].items():
+        for v, _ in graph[u].items():
             if v not in visited:
                 visited.add(v)
 

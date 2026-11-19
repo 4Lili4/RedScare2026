@@ -24,10 +24,10 @@ def read_graph_some(path):
             graph[u][v] = 1
             graph[v][u] = 1
 
-    return graph, s, t, red, n
+    return graph, s, t, red, n, m
 
 
-def some_function(graph, s, t, red):
+def some_function(graph_type, graph, s, t, red, m=None):
     """Return one simple path through a red vertex, or an empty list."""
     G = nx.DiGraph()
     G.add_nodes_from(graph)

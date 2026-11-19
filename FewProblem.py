@@ -41,9 +41,9 @@ def read_graph_few(path):
                 else:
                     graph[u][v] = 0
 
-    return graph, s, t, red, n
+    return graph, s, t, red, n, m
 
-def dijkstra_few(graph, s, t, red):
+def dijkstra_few(graph_type, graph, s, t, red, m):
     """Return the weight of a lightest s,t-path in graph, or False if t is unreachable."""
     dist = {s: 0}
     done = set()
