@@ -1,9 +1,9 @@
 from pathlib import Path
-from collections import deque
+import networkx as nx
 
 
 def read_graph_some(path):
-    """Return (graph, s, t, red) where graph[u] = {v: capacity}."""
+    """Return (graph, s, t, red, n) where graph[u] = {v: capacity}."""
     lines = [l.strip() for l in Path(path).read_text().splitlines() if l.strip()]
     n, m, r = map(int, lines[0].split())
     s, t = lines[1].split()
@@ -24,41 +24,55 @@ def read_graph_some(path):
             graph[u][v] = 1
             graph[v][u] = 1
 
-    return graph, s, t, red
-
-
-def bfs_some(res_graph, source='s', sink='t'):
-    visited = {source}
-    pointer = {source: None}
-    reachable = deque([source])
-
-    while reachable:
-        u = reachable.popleft()
-
-        for v, capacity in res_graph[u].items():
-            if v not in visited:
-                visited.add(v)
-                pointer[v] = (u, capacity)
-
-                if v == sink: #finishing case
-                    path = []
-                    vert = sink
-                    while pointer[vert] is not None:
-                        prev, cap = pointer[vert]
-                        path.append((prev, vert, cap))
-                        vert = prev
-                    return path[::-1]
-
-                reachable.append(v)
-    return False
+    return graph, s, t, red, n
 
 
 def some_function(graph, s, t, red):
-    
-    for node in red:
-        to_red = bfs_some(graph, s, node)
-        from_red = bfs_some(graph, node, t)
-        if type(to_red) == list and type(from_red) == list:
-            return True, to_red, from_red
+    """Return one simple path through a red vertex, or an empty list."""
+    G = nx.DiGraph()
+    G.add_nodes_from(graph)
+    G.add_edges_from((u, v) for u in graph for v in graph[u])
 
-    return False
+    def result(left, right):
+        # Keep the notebook's format: a list containing two lists of edge tuples.
+        return [(
+            [(u, v, graph[u][v]) for u, v in zip(left, left[1:])],
+            [(u, v, graph[u][v]) for u, v in zip(right, right[1:])],
+        )]
+
+    try:
+        path = nx.shortest_path(G, s, t)
+    except nx.NetworkXNoPath:
+        return []
+    for i, node in enumerate(path):
+        if node in red:
+            return result(path[:i + 1], path[i:])
+    if s == t:
+        return []
+
+    candidates = red & (nx.descendants(G, s) | {s}) & (nx.ancestors(G, t) | {t})
+    if all(u in graph[v] for u in graph for v in graph[u]):
+        G = G.to_undirected()
+        target = object()
+        G.add_edges_from([(s, target), (t, target)])
+        for node in candidates:
+            try:
+                paths = list(nx.node_disjoint_paths(G, node, target, cutoff=2))
+            except nx.NetworkXNoPath:
+                continue
+            if len(paths) == 2:
+                left = next(p[:-1] for p in paths if p[-2] == s)
+                right = next(p[:-1] for p in paths if p[-2] == t)
+                return result(left[::-1], right)
+    else:
+        for node in candidates:
+            # Try every simple prefix; the suffix must avoid its earlier vertices.
+            for left in nx.shortest_simple_paths(G, s, node):
+                blocked = set(left[:-1])
+                remaining = nx.subgraph_view(G, filter_node=lambda u: u not in blocked)
+                try:
+                    right = nx.shortest_path(remaining, node, t)
+                except (nx.NetworkXNoPath, nx.NodeNotFound):
+                    continue
+                return result(left, right)
+    return []
