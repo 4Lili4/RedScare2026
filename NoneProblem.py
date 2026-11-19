@@ -31,9 +31,9 @@ def read_graph_none(path):
                 graph[u][v] = 1
                 graph[v][u] = 1
 
-    return graph, s, t, red
+    return graph, s, t, red, n
 
-def bfs_none(res_graph, source='s', sink='t'):
+def bfs_none(res_graph, source='s', sink='t', red=None):
     visited = {source}
     pointer = {source: None}
     reachable = deque([source])
@@ -53,7 +53,7 @@ def bfs_none(res_graph, source='s', sink='t'):
                         prev, cap = pointer[vert]
                         path.append((prev, vert, cap))
                         vert = prev
-                    return path[::-1]
+                    return len(path)
 
                 reachable.append(v)
-    return False
+    return -1

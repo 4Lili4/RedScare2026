@@ -26,10 +26,10 @@ def read_graph_alternating(path):
                 graph[u][v] = 1
                 graph[v][u] = 1
 
-    return graph, s, t, red
+    return graph, s, t, red, n
 
 
-def bfs_alternating(res_graph, source, sink):
+def bfs_alternating(res_graph, source, sink, red=None):
     visited = {source}
     reachable = deque([source])
 

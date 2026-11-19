@@ -1,155 +1,155 @@
-algorithm,file,graph_type,result,runtime_seconds
-many,G-ex.txt,G,not_implemented,
-many,P3.txt,P3,not_implemented,
-many,bht.txt,bht,not_implemented,
-many,common-1-100.txt,common,not_implemented,
-many,common-1-1000.txt,common,not_implemented,
-many,common-1-1500.txt,common,not_implemented,
-many,common-1-20.txt,common,not_implemented,
-many,common-1-2000.txt,common,not_implemented,
-many,common-1-250.txt,common,not_implemented,
-many,common-1-2500.txt,common,not_implemented,
-many,common-1-3000.txt,common,not_implemented,
-many,common-1-3500.txt,common,not_implemented,
-many,common-1-4000.txt,common,not_implemented,
-many,common-1-4500.txt,common,not_implemented,
-many,common-1-50.txt,common,not_implemented,
-many,common-1-500.txt,common,not_implemented,
-many,common-1-5000.txt,common,not_implemented,
-many,common-1-5757.txt,common,not_implemented,
-many,common-2-100.txt,common,not_implemented,
-many,common-2-1000.txt,common,not_implemented,
-many,common-2-1500.txt,common,not_implemented,
-many,common-2-20.txt,common,not_implemented,
-many,common-2-2000.txt,common,not_implemented,
-many,common-2-250.txt,common,not_implemented,
-many,common-2-2500.txt,common,not_implemented,
-many,common-2-3000.txt,common,not_implemented,
-many,common-2-3500.txt,common,not_implemented,
-many,common-2-4000.txt,common,not_implemented,
-many,common-2-4500.txt,common,not_implemented,
-many,common-2-50.txt,common,not_implemented,
-many,common-2-500.txt,common,not_implemented,
-many,common-2-5000.txt,common,not_implemented,
-many,common-2-5757.txt,common,not_implemented,
-many,dodecahedron.txt,dodecahedron,not_implemented,
-many,gnm-10-15-0.txt,gnm,not_implemented,
-many,gnm-10-15-1.txt,gnm,not_implemented,
-many,gnm-10-20-0.txt,gnm,not_implemented,
-many,gnm-10-20-1.txt,gnm,not_implemented,
-many,gnm-1000-1500-0.txt,gnm,not_implemented,
-many,gnm-1000-1500-1.txt,gnm,not_implemented,
-many,gnm-1000-2000-0.txt,gnm,not_implemented,
-many,gnm-1000-2000-1.txt,gnm,not_implemented,
-many,gnm-2000-3000-0.txt,gnm,not_implemented,
-many,gnm-2000-3000-1.txt,gnm,not_implemented,
-many,gnm-2000-4000-0.txt,gnm,not_implemented,
-many,gnm-2000-4000-1.txt,gnm,not_implemented,
-many,gnm-3000-4500-0.txt,gnm,not_implemented,
-many,gnm-3000-4500-1.txt,gnm,not_implemented,
-many,gnm-3000-6000-0.txt,gnm,not_implemented,
-many,gnm-3000-6000-1.txt,gnm,not_implemented,
-many,gnm-4000-6000-0.txt,gnm,not_implemented,
-many,gnm-4000-6000-1.txt,gnm,not_implemented,
-many,gnm-4000-8000-0.txt,gnm,not_implemented,
-many,gnm-4000-8000-1.txt,gnm,not_implemented,
-many,gnm-5000-10000-0.txt,gnm,not_implemented,
-many,gnm-5000-10000-1.txt,gnm,not_implemented,
-many,gnm-5000-7500-0.txt,gnm,not_implemented,
-many,gnm-5000-7500-1.txt,gnm,not_implemented,
-many,grid-10-0.txt,grid,not_implemented,
-many,grid-10-1.txt,grid,not_implemented,
-many,grid-10-2.txt,grid,not_implemented,
-many,grid-25-0.txt,grid,not_implemented,
-many,grid-25-1.txt,grid,not_implemented,
-many,grid-25-2.txt,grid,not_implemented,
-many,grid-5-0.txt,grid,not_implemented,
-many,grid-5-1.txt,grid,not_implemented,
-many,grid-5-2.txt,grid,not_implemented,
-many,grid-50-0.txt,grid,not_implemented,
-many,grid-50-1.txt,grid,not_implemented,
-many,grid-50-2.txt,grid,not_implemented,
-many,increase-n10-1.txt,increase,not_implemented,
-many,increase-n10-2.txt,increase,not_implemented,
-many,increase-n10-3.txt,increase,not_implemented,
-many,increase-n100-1.txt,increase,not_implemented,
-many,increase-n100-2.txt,increase,not_implemented,
-many,increase-n100-3.txt,increase,not_implemented,
-many,increase-n20-1.txt,increase,not_implemented,
-many,increase-n20-2.txt,increase,not_implemented,
-many,increase-n20-3.txt,increase,not_implemented,
-many,increase-n50-1.txt,increase,not_implemented,
-many,increase-n50-2.txt,increase,not_implemented,
-many,increase-n50-3.txt,increase,not_implemented,
-many,increase-n500-1.txt,increase,not_implemented,
-many,increase-n500-2.txt,increase,not_implemented,
-many,increase-n500-3.txt,increase,not_implemented,
-many,increase-n8-1.txt,increase,not_implemented,
-many,increase-n8-2.txt,increase,not_implemented,
-many,increase-n8-3.txt,increase,not_implemented,
-many,rusty-1-17.txt,rusty,not_implemented,
-many,rusty-1-2000.txt,rusty,not_implemented,
-many,rusty-1-2500.txt,rusty,not_implemented,
-many,rusty-1-3000.txt,rusty,not_implemented,
-many,rusty-1-3500.txt,rusty,not_implemented,
-many,rusty-1-4000.txt,rusty,not_implemented,
-many,rusty-1-4500.txt,rusty,not_implemented,
-many,rusty-1-5000.txt,rusty,not_implemented,
-many,rusty-1-5757.txt,rusty,not_implemented,
-many,rusty-2-2000.txt,rusty,not_implemented,
-many,rusty-2-2500.txt,rusty,not_implemented,
-many,rusty-2-3000.txt,rusty,not_implemented,
-many,rusty-2-3500.txt,rusty,not_implemented,
-many,rusty-2-4000.txt,rusty,not_implemented,
-many,rusty-2-4500.txt,rusty,not_implemented,
-many,rusty-2-5000.txt,rusty,not_implemented,
-many,rusty-2-5757.txt,rusty,not_implemented,
-many,ski-illustration.txt,ski,not_implemented,
-many,ski-level10-1.txt,ski,not_implemented,
-many,ski-level10-2.txt,ski,not_implemented,
-many,ski-level10-3.txt,ski,not_implemented,
-many,ski-level20-1.txt,ski,not_implemented,
-many,ski-level20-2.txt,ski,not_implemented,
-many,ski-level20-3.txt,ski,not_implemented,
-many,ski-level3-1.txt,ski,not_implemented,
-many,ski-level3-2.txt,ski,not_implemented,
-many,ski-level3-3.txt,ski,not_implemented,
-many,ski-level5-1.txt,ski,not_implemented,
-many,ski-level5-2.txt,ski,not_implemented,
-many,ski-level5-3.txt,ski,not_implemented,
-many,smallworld-10-0.txt,smallworld,not_implemented,
-many,smallworld-10-1.txt,smallworld,not_implemented,
-many,smallworld-20-0.txt,smallworld,not_implemented,
-many,smallworld-20-1.txt,smallworld,not_implemented,
-many,smallworld-3-0.txt,smallworld,not_implemented,
-many,smallworld-3-1.txt,smallworld,not_implemented,
-many,smallworld-30-0.txt,smallworld,not_implemented,
-many,smallworld-30-1.txt,smallworld,not_implemented,
-many,smallworld-40-0.txt,smallworld,not_implemented,
-many,smallworld-40-1.txt,smallworld,not_implemented,
-many,smallworld-50-0.txt,smallworld,not_implemented,
-many,smallworld-50-1.txt,smallworld,not_implemented,
-many,wall-n-1.txt,wall-n,not_implemented,
-many,wall-n-10.txt,wall-n,not_implemented,
-many,wall-n-100.txt,wall-n,not_implemented,
-many,wall-n-1000.txt,wall-n,not_implemented,
-many,wall-n-10000.txt,wall-n,not_implemented,
-many,wall-n-2.txt,wall-n,not_implemented,
-many,wall-n-3.txt,wall-n,not_implemented,
-many,wall-n-4.txt,wall-n,not_implemented,
-many,wall-p-1.txt,wall-p,not_implemented,
-many,wall-p-10.txt,wall-p,not_implemented,
-many,wall-p-100.txt,wall-p,not_implemented,
-many,wall-p-1000.txt,wall-p,not_implemented,
-many,wall-p-10000.txt,wall-p,not_implemented,
-many,wall-p-2.txt,wall-p,not_implemented,
-many,wall-p-3.txt,wall-p,not_implemented,
-many,wall-p-4.txt,wall-p,not_implemented,
-many,wall-z-1.txt,wall-z,not_implemented,
-many,wall-z-10.txt,wall-z,not_implemented,
-many,wall-z-100.txt,wall-z,not_implemented,
-many,wall-z-1000.txt,wall-z,not_implemented,
-many,wall-z-10000.txt,wall-z,not_implemented,
-many,wall-z-2.txt,wall-z,not_implemented,
-many,wall-z-3.txt,wall-z,not_implemented,
-many,wall-z-4.txt,wall-z,not_implemented,
+file_name,graph_type,n_nodes,result,runtime_seconds
+G-ex.txt,Undirected small example,8,?!,no time
+P3.txt,3-node path,3,?!,no time
+bht.txt,Undirected,5757,?!,no time
+common-1-100.txt,Undirected word-graph,100,?!,no time
+common-1-1000.txt,Undirected word-graph,1000,?!,no time
+common-1-1500.txt,Undirected word-graph,1500,?!,no time
+common-1-20.txt,Undirected word-graph,20,?!,no time
+common-1-2000.txt,Undirected word-graph,2000,?!,no time
+common-1-250.txt,Undirected word-graph,250,?!,no time
+common-1-2500.txt,Undirected word-graph,2500,?!,no time
+common-1-3000.txt,Undirected word-graph,3000,?!,no time
+common-1-3500.txt,Undirected word-graph,3500,?!,no time
+common-1-4000.txt,Undirected word-graph,4000,?!,no time
+common-1-4500.txt,Undirected word-graph,4500,?!,no time
+common-1-50.txt,Undirected word-graph,50,?!,no time
+common-1-500.txt,Undirected word-graph,500,?!,no time
+common-1-5000.txt,Undirected word-graph,5000,?!,no time
+common-1-5757.txt,Undirected word-graph,5757,?!,no time
+common-2-100.txt,Undirected word-graph,100,?!,no time
+common-2-1000.txt,Undirected word-graph,1000,?!,no time
+common-2-1500.txt,Undirected word-graph,1500,?!,no time
+common-2-20.txt,Undirected word-graph,20,?!,no time
+common-2-2000.txt,Undirected word-graph,2000,?!,no time
+common-2-250.txt,Undirected word-graph,250,?!,no time
+common-2-2500.txt,Undirected word-graph,2500,?!,no time
+common-2-3000.txt,Undirected word-graph,3000,?!,no time
+common-2-3500.txt,Undirected word-graph,3500,?!,no time
+common-2-4000.txt,Undirected word-graph,4000,?!,no time
+common-2-4500.txt,Undirected word-graph,4500,?!,no time
+common-2-50.txt,Undirected word-graph,50,?!,no time
+common-2-500.txt,Undirected word-graph,500,?!,no time
+common-2-5000.txt,Undirected word-graph,5000,?!,no time
+common-2-5757.txt,Undirected word-graph,5757,?!,no time
+dodecahedron.txt,Undirected all red,20,?!,no time
+gnm-10-15-0.txt,Undirected random,10,?!,no time
+gnm-10-15-1.txt,Undirected random,10,?!,no time
+gnm-10-20-0.txt,Undirected random,10,?!,no time
+gnm-10-20-1.txt,Undirected random,10,?!,no time
+gnm-1000-1500-0.txt,Undirected random,1000,?!,no time
+gnm-1000-1500-1.txt,Undirected random,1000,?!,no time
+gnm-1000-2000-0.txt,Undirected random,1000,?!,no time
+gnm-1000-2000-1.txt,Undirected random,1000,?!,no time
+gnm-2000-3000-0.txt,Undirected random,2000,?!,no time
+gnm-2000-3000-1.txt,Undirected random,2000,?!,no time
+gnm-2000-4000-0.txt,Undirected random,2000,?!,no time
+gnm-2000-4000-1.txt,Undirected random,2000,?!,no time
+gnm-3000-4500-0.txt,Undirected random,3000,?!,no time
+gnm-3000-4500-1.txt,Undirected random,3000,?!,no time
+gnm-3000-6000-0.txt,Undirected random,3000,?!,no time
+gnm-3000-6000-1.txt,Undirected random,3000,?!,no time
+gnm-4000-6000-0.txt,Undirected random,4000,?!,no time
+gnm-4000-6000-1.txt,Undirected random,4000,?!,no time
+gnm-4000-8000-0.txt,Undirected random,4000,?!,no time
+gnm-4000-8000-1.txt,Undirected random,4000,?!,no time
+gnm-5000-10000-0.txt,Undirected random,5000,?!,no time
+gnm-5000-10000-1.txt,Undirected random,5000,?!,no time
+gnm-5000-7500-0.txt,Undirected random,5000,?!,no time
+gnm-5000-7500-1.txt,Undirected random,5000,?!,no time
+grid-10-0.txt,Undirected grid,100,?!,no time
+grid-10-1.txt,Undirected grid,100,?!,no time
+grid-10-2.txt,Undirected grid,100,?!,no time
+grid-25-0.txt,Undirected grid,625,?!,no time
+grid-25-1.txt,Undirected grid,625,?!,no time
+grid-25-2.txt,Undirected grid,625,?!,no time
+grid-5-0.txt,Undirected grid,25,?!,no time
+grid-5-1.txt,Undirected grid,25,?!,no time
+grid-5-2.txt,Undirected grid,25,?!,no time
+grid-50-0.txt,Undirected grid,2500,?!,no time
+grid-50-1.txt,Undirected grid,2500,?!,no time
+grid-50-2.txt,Undirected grid,2500,?!,no time
+increase-n10-1.txt,Directed Acyclic Graph,10,?!,no time
+increase-n10-2.txt,Directed Acyclic Graph,10,?!,no time
+increase-n10-3.txt,Directed Acyclic Graph,10,?!,no time
+increase-n100-1.txt,Directed Acyclic Graph,100,?!,no time
+increase-n100-2.txt,Directed Acyclic Graph,100,?!,no time
+increase-n100-3.txt,Directed Acyclic Graph,100,?!,no time
+increase-n20-1.txt,Directed Acyclic Graph,20,?!,no time
+increase-n20-2.txt,Directed Acyclic Graph,20,?!,no time
+increase-n20-3.txt,Directed Acyclic Graph,20,?!,no time
+increase-n50-1.txt,Directed Acyclic Graph,50,?!,no time
+increase-n50-2.txt,Directed Acyclic Graph,50,?!,no time
+increase-n50-3.txt,Directed Acyclic Graph,50,?!,no time
+increase-n500-1.txt,Directed Acyclic Graph,500,?!,no time
+increase-n500-2.txt,Directed Acyclic Graph,500,?!,no time
+increase-n500-3.txt,Directed Acyclic Graph,500,?!,no time
+increase-n8-1.txt,Directed Acyclic Graph,8,?!,no time
+increase-n8-2.txt,Directed Acyclic Graph,8,?!,no time
+increase-n8-3.txt,Directed Acyclic Graph,8,?!,no time
+rusty-1-17.txt,Undirected word-graph,17,?!,no time
+rusty-1-2000.txt,Undirected word-graph,2000,?!,no time
+rusty-1-2500.txt,Undirected word-graph,2500,?!,no time
+rusty-1-3000.txt,Undirected word-graph,3000,?!,no time
+rusty-1-3500.txt,Undirected word-graph,3500,?!,no time
+rusty-1-4000.txt,Undirected word-graph,4000,?!,no time
+rusty-1-4500.txt,Undirected word-graph,4500,?!,no time
+rusty-1-5000.txt,Undirected word-graph,5000,?!,no time
+rusty-1-5757.txt,Undirected word-graph,5757,?!,no time
+rusty-2-2000.txt,Undirected word-graph,2000,?!,no time
+rusty-2-2500.txt,Undirected word-graph,2500,?!,no time
+rusty-2-3000.txt,Undirected word-graph,3000,?!,no time
+rusty-2-3500.txt,Undirected word-graph,3500,?!,no time
+rusty-2-4000.txt,Undirected word-graph,4000,?!,no time
+rusty-2-4500.txt,Undirected word-graph,4500,?!,no time
+rusty-2-5000.txt,Undirected word-graph,5000,?!,no time
+rusty-2-5757.txt,Undirected word-graph,5757,?!,no time
+ski-illustration.txt,Directed Acyclic Graph,36,?!,no time
+ski-level10-1.txt,Directed Acyclic Graph,79,?!,no time
+ski-level10-2.txt,Directed Acyclic Graph,76,?!,no time
+ski-level10-3.txt,Directed Acyclic Graph,77,?!,no time
+ski-level20-1.txt,Directed Acyclic Graph,252,?!,no time
+ski-level20-2.txt,Directed Acyclic Graph,253,?!,no time
+ski-level20-3.txt,Directed Acyclic Graph,254,?!,no time
+ski-level3-1.txt,Directed Acyclic Graph,16,?!,no time
+ski-level3-2.txt,Directed Acyclic Graph,14,?!,no time
+ski-level3-3.txt,Directed Acyclic Graph,15,?!,no time
+ski-level5-1.txt,Directed Acyclic Graph,29,?!,no time
+ski-level5-2.txt,Directed Acyclic Graph,26,?!,no time
+ski-level5-3.txt,Directed Acyclic Graph,27,?!,no time
+smallworld-10-0.txt,Undirected with high clustering,100,?!,no time
+smallworld-10-1.txt,Undirected with high clustering,100,?!,no time
+smallworld-20-0.txt,Undirected with high clustering,400,?!,no time
+smallworld-20-1.txt,Undirected with high clustering,400,?!,no time
+smallworld-3-0.txt,Undirected with high clustering,9,?!,no time
+smallworld-3-1.txt,Undirected with high clustering,9,?!,no time
+smallworld-30-0.txt,Undirected with high clustering,900,?!,no time
+smallworld-30-1.txt,Undirected with high clustering,900,?!,no time
+smallworld-40-0.txt,Undirected with high clustering,1600,?!,no time
+smallworld-40-1.txt,Undirected with high clustering,1600,?!,no time
+smallworld-50-0.txt,Undirected with high clustering,2500,?!,no time
+smallworld-50-1.txt,Undirected with high clustering,2500,?!,no time
+wall-n-1.txt,Undirected 8-node blocks separated,8,?!,no time
+wall-n-10.txt,Undirected 8-node blocks separated,80,?!,no time
+wall-n-100.txt,Undirected 8-node blocks separated,800,?!,no time
+wall-n-1000.txt,Undirected 8-node blocks separated,8000,?!,no time
+wall-n-10000.txt,Undirected 8-node blocks separated,80000,?!,no time
+wall-n-2.txt,Undirected 8-node blocks separated,16,?!,no time
+wall-n-3.txt,Undirected 8-node blocks separated,24,?!,no time
+wall-n-4.txt,Undirected 8-node blocks separated,32,?!,no time
+wall-p-1.txt,Undirected 8-node blocks overlapping,8,?!,no time
+wall-p-10.txt,Undirected 8-node blocks overlapping,62,?!,no time
+wall-p-100.txt,Undirected 8-node blocks overlapping,602,?!,no time
+wall-p-1000.txt,Undirected 8-node blocks overlapping,6002,?!,no time
+wall-p-10000.txt,Undirected 8-node blocks overlapping,60002,?!,no time
+wall-p-2.txt,Undirected 8-node blocks overlapping,14,?!,no time
+wall-p-3.txt,Undirected 8-node blocks overlapping,20,?!,no time
+wall-p-4.txt,Undirected 8-node blocks overlapping,26,?!,no time
+wall-z-1.txt,Undirected 8-node blocks touching corners,8,?!,no time
+wall-z-10.txt,Undirected 8-node blocks touching corners,71,?!,no time
+wall-z-100.txt,Undirected 8-node blocks touching corners,701,?!,no time
+wall-z-1000.txt,Undirected 8-node blocks touching corners,7001,?!,no time
+wall-z-10000.txt,Undirected 8-node blocks touching corners,70001,?!,no time
+wall-z-2.txt,Undirected 8-node blocks touching corners,15,?!,no time
+wall-z-3.txt,Undirected 8-node blocks touching corners,22,?!,no time
+wall-z-4.txt,Undirected 8-node blocks touching corners,29,?!,no time

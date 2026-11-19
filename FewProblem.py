@@ -41,7 +41,7 @@ def read_graph_few(path):
                 else:
                     graph[u][v] = 0
 
-    return graph, s, t, red
+    return graph, s, t, red, n
 
 def dijkstra_few(graph, s, t, red):
     """Return the weight of a lightest s,t-path in graph, or False if t is unreachable."""
@@ -67,4 +67,4 @@ def dijkstra_few(graph, s, t, red):
                 dist[v] = new_d
                 heapq.heappush(heap, (new_d, v))
 
-    return False
+    return -1
