@@ -1,155 +1,155 @@
 file_name,graph_type,n_nodes,result,runtime_seconds
-G-ex.txt,Undirected small example,8,3,1.4568002370651811e-05
-P3.txt,3-node path,3,-1,3.916997229680419e-06
-bht.txt,Undirected,5757,6,0.002033837001363281
-common-1-100.txt,Undirected word-graph,100,-1,1.6281002899631858e-05
-common-1-1000.txt,Undirected word-graph,1000,-1,8.757000614423305e-06
-common-1-1500.txt,Undirected word-graph,1500,-1,9.07800131244585e-06
-common-1-20.txt,Undirected word-graph,20,-1,3.2560055842623115e-06
-common-1-2000.txt,Undirected word-graph,2000,-1,8.957002137321979e-06
-common-1-250.txt,Undirected word-graph,250,-1,4.027002432849258e-06
-common-1-2500.txt,Undirected word-graph,2500,6,8.516199886798859e-05
-common-1-3000.txt,Undirected word-graph,3000,6,8.791700383881107e-05
-common-1-3500.txt,Undirected word-graph,3500,6,0.0003232730014133267
-common-1-4000.txt,Undirected word-graph,4000,6,0.0002667459993972443
-common-1-4500.txt,Undirected word-graph,4500,6,0.0007271990034496412
-common-1-50.txt,Undirected word-graph,50,-1,7.754999387543648e-06
-common-1-500.txt,Undirected word-graph,500,-1,3.736997314263135e-06
-common-1-5000.txt,Undirected word-graph,5000,6,0.0005498629980138503
-common-1-5757.txt,Undirected word-graph,5757,6,0.0011496499937493354
-common-2-100.txt,Undirected word-graph,100,-1,5.620997399091721e-06
-common-2-1000.txt,Undirected word-graph,1000,4,7.388999802060425e-05
-common-2-1500.txt,Undirected word-graph,1500,4,0.00032413499866379425
-common-2-20.txt,Undirected word-graph,20,-1,4.398003511596471e-06
-common-2-2000.txt,Undirected word-graph,2000,4,0.0006570050027221441
-common-2-250.txt,Undirected word-graph,250,-1,8.62700107973069e-06
-common-2-2500.txt,Undirected word-graph,2500,4,0.000600469000346493
-common-2-3000.txt,Undirected word-graph,3000,4,0.0006825639939052053
-common-2-3500.txt,Undirected word-graph,3500,4,0.00188582600094378
-common-2-4000.txt,Undirected word-graph,4000,4,0.001809039997169748
-common-2-4500.txt,Undirected word-graph,4500,4,0.0025605159971746616
-common-2-50.txt,Undirected word-graph,50,-1,1.576000067871064e-05
-common-2-500.txt,Undirected word-graph,500,4,1.876500027719885e-05
-common-2-5000.txt,Undirected word-graph,5000,4,0.003954149004130159
-common-2-5757.txt,Undirected word-graph,5757,4,0.004892669006949291
-dodecahedron.txt,Undirected all red,20,1,2.6670000806916505e-05
-gnm-10-15-0.txt,Undirected random,10,1,3.1860035960562527e-06
-gnm-10-15-1.txt,Undirected random,10,1,2.0840016077272594e-06
-gnm-10-20-0.txt,Undirected random,10,3,7.874994480516762e-06
-gnm-10-20-1.txt,Undirected random,10,3,4.198001988697797e-06
-gnm-1000-1500-0.txt,Undirected random,1000,-1,0.0003786879969993606
-gnm-1000-1500-1.txt,Undirected random,1000,-1,0.00010574000043561682
-gnm-1000-2000-0.txt,Undirected random,1000,7,0.00016699700063327327
-gnm-1000-2000-1.txt,Undirected random,1000,-1,4.207999154459685e-06
-gnm-2000-3000-0.txt,Undirected random,2000,8,0.0002562160007073544
-gnm-2000-3000-1.txt,Undirected random,2000,-1,7.003996870480478e-06
-gnm-2000-4000-0.txt,Undirected random,2000,6,0.0004282020017853938
-gnm-2000-4000-1.txt,Undirected random,2000,5,3.765100700547919e-05
-gnm-3000-4500-0.txt,Undirected random,3000,10,0.0012297720022615977
-gnm-3000-4500-1.txt,Undirected random,3000,-1,2.9937000363133848e-05
-gnm-3000-6000-0.txt,Undirected random,3000,6,0.0002385420011705719
-gnm-3000-6000-1.txt,Undirected random,3000,6,6.340999971143901e-05
-gnm-4000-6000-0.txt,Undirected random,4000,7,0.0013288800037116744
-gnm-4000-6000-1.txt,Undirected random,4000,15,0.00034309100010432303
-gnm-4000-8000-0.txt,Undirected random,4000,5,0.00011590000212891027
-gnm-4000-8000-1.txt,Undirected random,4000,6,4.194900247966871e-05
-gnm-5000-10000-0.txt,Undirected random,5000,5,0.00017985099839279428
-gnm-5000-10000-1.txt,Undirected random,5000,5,5.1637995056807995e-05
-gnm-5000-7500-0.txt,Undirected random,5000,-1,9.919000149238855e-06
-gnm-5000-7500-1.txt,Undirected random,5000,-1,9.067000064533204e-06
-grid-10-0.txt,Undirected grid,100,49,3.772100171772763e-05
-grid-10-1.txt,Undirected grid,100,29,2.9957001970615238e-05
-grid-10-2.txt,Undirected grid,100,-1,4.7190042096190155e-06
-grid-25-0.txt,Undirected grid,625,324,0.00018071199883706868
-grid-25-1.txt,Undirected grid,625,123,0.00015702800010330975
-grid-25-2.txt,Undirected grid,625,-1,1.3265002053231001e-05
-grid-5-0.txt,Undirected grid,25,14,1.0249001206830144e-05
-grid-5-1.txt,Undirected grid,25,8,1.0660005500540137e-05
-grid-5-2.txt,Undirected grid,25,-1,3.315995854791254e-06
-grid-50-0.txt,Undirected grid,2500,1249,0.0009646789985708892
-grid-50-1.txt,Undirected grid,2500,521,0.000559560998226516
-grid-50-2.txt,Undirected grid,2500,-1,4.509599966695532e-05
-increase-n10-1.txt,Directed Acyclic Graph,10,1,5.841000529471785e-06
-increase-n10-2.txt,Directed Acyclic Graph,10,1,3.445995389483869e-06
-increase-n10-3.txt,Directed Acyclic Graph,10,-1,1.7929996829479933e-06
-increase-n100-1.txt,Directed Acyclic Graph,100,-1,1.3546006812248379e-05
-increase-n100-2.txt,Directed Acyclic Graph,100,1,1.4536999515257776e-05
-increase-n100-3.txt,Directed Acyclic Graph,100,-1,3.727000148501247e-06
-increase-n20-1.txt,Directed Acyclic Graph,20,-1,3.597000613808632e-06
-increase-n20-2.txt,Directed Acyclic Graph,20,1,3.4660042729228735e-06
-increase-n20-3.txt,Directed Acyclic Graph,20,-1,3.4569966373965144e-06
-increase-n50-1.txt,Directed Acyclic Graph,50,-1,1.4387005649041384e-05
-increase-n50-2.txt,Directed Acyclic Graph,50,1,6.261994712986052e-06
-increase-n50-3.txt,Directed Acyclic Graph,50,1,5.250003596302122e-06
-increase-n500-1.txt,Directed Acyclic Graph,500,1,5.724899529013783e-05
-increase-n500-2.txt,Directed Acyclic Graph,500,1,5.943300493527204e-05
-increase-n500-3.txt,Directed Acyclic Graph,500,1,7.295800605788827e-05
-increase-n8-1.txt,Directed Acyclic Graph,8,1,4.3379986891523e-06
-increase-n8-2.txt,Directed Acyclic Graph,8,1,2.4949986254796386e-06
-increase-n8-3.txt,Directed Acyclic Graph,8,1,3.126006049569696e-06
-rusty-1-17.txt,Undirected word-graph,17,10,1.0298994311597198e-05
-rusty-1-2000.txt,Undirected word-graph,2000,-1,6.522001058328897e-06
-rusty-1-2500.txt,Undirected word-graph,2500,-1,1.3996999769005924e-05
-rusty-1-3000.txt,Undirected word-graph,3000,14,0.0008406339984503575
-rusty-1-3500.txt,Undirected word-graph,3500,14,0.001224612002260983
-rusty-1-4000.txt,Undirected word-graph,4000,13,0.0024701740039745346
-rusty-1-4500.txt,Undirected word-graph,4500,7,0.0002192250030930154
-rusty-1-5000.txt,Undirected word-graph,5000,7,0.00017325899534625933
-rusty-1-5757.txt,Undirected word-graph,5757,7,0.0005778060003649443
-rusty-2-2000.txt,Undirected word-graph,2000,5,0.0021399089964688756
-rusty-2-2500.txt,Undirected word-graph,2500,4,0.0015077089992701076
-rusty-2-3000.txt,Undirected word-graph,3000,4,0.00336454100033734
-rusty-2-3500.txt,Undirected word-graph,3500,4,0.004246863994922023
-rusty-2-4000.txt,Undirected word-graph,4000,4,0.0056306179976672865
-rusty-2-4500.txt,Undirected word-graph,4500,4,0.0034393030000501312
-rusty-2-5000.txt,Undirected word-graph,5000,4,0.003362166004080791
-rusty-2-5757.txt,Undirected word-graph,5757,4,0.013986664002004545
-ski-illustration.txt,Directed Acyclic Graph,36,8,4.461400385480374e-05
-ski-level10-1.txt,Directed Acyclic Graph,79,-1,4.779998562298715e-06
-ski-level10-2.txt,Directed Acyclic Graph,76,-1,6.952999683562666e-06
-ski-level10-3.txt,Directed Acyclic Graph,77,-1,5.720998160541058e-06
-ski-level20-1.txt,Directed Acyclic Graph,252,-1,4.7389985411427915e-06
-ski-level20-2.txt,Directed Acyclic Graph,253,-1,3.415996616240591e-06
-ski-level20-3.txt,Directed Acyclic Graph,254,-1,3.3059986890293658e-06
-ski-level3-1.txt,Directed Acyclic Graph,16,5,5.299996701069176e-06
-ski-level3-2.txt,Directed Acyclic Graph,14,5,4.808993253391236e-06
-ski-level3-3.txt,Directed Acyclic Graph,15,5,4.538000212050974e-06
-ski-level5-1.txt,Directed Acyclic Graph,29,-1,1.7229976947419345e-06
-ski-level5-2.txt,Directed Acyclic Graph,26,-1,1.3929966371506453e-06
-ski-level5-3.txt,Directed Acyclic Graph,27,7,6.99399970471859e-06
-smallworld-10-0.txt,Undirected with high clustering,100,6,4.580699896905571e-05
-smallworld-10-1.txt,Undirected with high clustering,100,8,1.8074999388772994e-05
-smallworld-20-0.txt,Undirected with high clustering,400,8,0.0001951000012923032
-smallworld-20-1.txt,Undirected with high clustering,400,14,6.88700019964017e-05
-smallworld-3-0.txt,Undirected with high clustering,9,4,5.2800023695454e-06
-smallworld-3-1.txt,Undirected with high clustering,9,2,3.5669945646077394e-06
-smallworld-30-0.txt,Undirected with high clustering,900,9,0.0003667249984573573
-smallworld-30-1.txt,Undirected with high clustering,900,11,0.0002287740062456578
-smallworld-40-0.txt,Undirected with high clustering,1600,8,0.0005588499989244156
-smallworld-40-1.txt,Undirected with high clustering,1600,13,0.00025942200591089204
-smallworld-50-0.txt,Undirected with high clustering,2500,3,1.4176999684423208e-05
-smallworld-50-1.txt,Undirected with high clustering,2500,-1,0.0006001980000291951
-wall-n-1.txt,Undirected 8-node blocks separated,8,1,4.036999598611146e-06
-wall-n-10.txt,Undirected 8-node blocks separated,80,1,2.5049957912415266e-06
-wall-n-100.txt,Undirected 8-node blocks separated,800,1,2.715001755859703e-06
-wall-n-1000.txt,Undirected 8-node blocks separated,8000,1,1.4528006431646645e-05
-wall-n-10000.txt,Undirected 8-node blocks separated,80000,1,3.266199928475544e-05
-wall-n-2.txt,Undirected 8-node blocks separated,16,1,3.413399826968089e-05
-wall-n-3.txt,Undirected 8-node blocks separated,24,1,3.5470002330839634e-06
-wall-n-4.txt,Undirected 8-node blocks separated,32,1,2.0939987734891474e-06
-wall-p-1.txt,Undirected 8-node blocks overlapping,8,1,1.8139980966225266e-06
-wall-p-10.txt,Undirected 8-node blocks overlapping,62,1,1.844004145823419e-06
-wall-p-100.txt,Undirected 8-node blocks overlapping,602,1,4.279005224816501e-06
-wall-p-1000.txt,Undirected 8-node blocks overlapping,6002,1,1.676199462963268e-05
-wall-p-10000.txt,Undirected 8-node blocks overlapping,60002,1,2.6489993615541607e-05
-wall-p-2.txt,Undirected 8-node blocks overlapping,14,1,4.150900349486619e-05
-wall-p-3.txt,Undirected 8-node blocks overlapping,20,1,3.0960000003688037e-06
-wall-p-4.txt,Undirected 8-node blocks overlapping,26,1,2.044005668722093e-06
-wall-z-1.txt,Undirected 8-node blocks touching corners,8,1,3.2660027500241995e-06
-wall-z-10.txt,Undirected 8-node blocks touching corners,71,1,1.7429993022233248e-06
-wall-z-100.txt,Undirected 8-node blocks touching corners,701,1,4.80900052934885e-06
-wall-z-1000.txt,Undirected 8-node blocks touching corners,7001,1,1.8856000679079443e-05
-wall-z-10000.txt,Undirected 8-node blocks touching corners,70001,1,2.85339992842637e-05
-wall-z-2.txt,Undirected 8-node blocks touching corners,15,1,2.7683003281708807e-05
-wall-z-3.txt,Undirected 8-node blocks touching corners,22,1,2.615000994410366e-06
-wall-z-4.txt,Undirected 8-node blocks touching corners,29,1,1.8040009308606386e-06
+G-ex.txt,Undirected small example,8,3,1.3566001143772155e-05
+P3.txt,3-node path,3,-1,2.7650021365843713e-06
+bht.txt,Undirected,5757,6,0.002293868994456716
+common-1-100.txt,Undirected word-graph,100,-1,1.3255004887469113e-05
+common-1-1000.txt,Undirected word-graph,1000,-1,6.713002221658826e-06
+common-1-1500.txt,Undirected word-graph,1500,-1,1.1632000678218901e-05
+common-1-20.txt,Undirected word-graph,20,-1,2.724998921621591e-06
+common-1-2000.txt,Undirected word-graph,2000,-1,1.6440993931610137e-05
+common-1-250.txt,Undirected word-graph,250,-1,6.5920030465349555e-06
+common-1-2500.txt,Undirected word-graph,2500,6,0.00013976499758427963
+common-1-3000.txt,Undirected word-graph,3000,6,0.00019390699890209362
+common-1-3500.txt,Undirected word-graph,3500,6,0.00020137200044700876
+common-1-4000.txt,Undirected word-graph,4000,6,0.0002547430049162358
+common-1-4500.txt,Undirected word-graph,4500,6,0.00041121999674942344
+common-1-50.txt,Undirected word-graph,50,-1,3.717002982739359e-06
+common-1-500.txt,Undirected word-graph,500,-1,3.6370038287714124e-06
+common-1-5000.txt,Undirected word-graph,5000,6,0.0007936039983178489
+common-1-5757.txt,Undirected word-graph,5757,6,0.0016352500024368055
+common-2-100.txt,Undirected word-graph,100,-1,1.5338999219238758e-05
+common-2-1000.txt,Undirected word-graph,1000,4,6.626600224990398e-05
+common-2-1500.txt,Undirected word-graph,1500,4,0.0003362780043971725
+common-2-20.txt,Undirected word-graph,20,-1,3.526998625602573e-06
+common-2-2000.txt,Undirected word-graph,2000,4,0.0012042730013490655
+common-2-250.txt,Undirected word-graph,250,-1,3.516700235195458e-05
+common-2-2500.txt,Undirected word-graph,2500,4,0.0004598119994625449
+common-2-3000.txt,Undirected word-graph,3000,4,0.0011539579936652444
+common-2-3500.txt,Undirected word-graph,3500,4,0.0016912970022531226
+common-2-4000.txt,Undirected word-graph,4000,4,0.0023662059975322336
+common-2-4500.txt,Undirected word-graph,4500,4,0.003312640998046845
+common-2-50.txt,Undirected word-graph,50,-1,2.8775000828318298e-05
+common-2-500.txt,Undirected word-graph,500,4,2.589900395832956e-05
+common-2-5000.txt,Undirected word-graph,5000,4,0.004418416996486485
+common-2-5757.txt,Undirected word-graph,5757,4,0.004974692004907411
+dodecahedron.txt,Undirected all red,20,1,3.0637995223514736e-05
+gnm-10-15-0.txt,Undirected random,10,1,3.896995622199029e-06
+gnm-10-15-1.txt,Undirected random,10,1,2.054002834483981e-06
+gnm-10-20-0.txt,Undirected random,10,3,7.595001079607755e-06
+gnm-10-20-1.txt,Undirected random,10,3,4.168003215454519e-06
+gnm-1000-1500-0.txt,Undirected random,1000,-1,0.0003589709958760068
+gnm-1000-1500-1.txt,Undirected random,1000,-1,0.0001597419977770187
+gnm-1000-2000-0.txt,Undirected random,1000,7,0.0001727170019876212
+gnm-1000-2000-1.txt,Undirected random,1000,-1,4.287998308427632e-06
+gnm-2000-3000-0.txt,Undirected random,2000,8,0.0002586410046205856
+gnm-2000-3000-1.txt,Undirected random,2000,-1,8.406001143157482e-06
+gnm-2000-4000-0.txt,Undirected random,2000,6,0.0006915409976500086
+gnm-2000-4000-1.txt,Undirected random,2000,5,9.421799768460914e-05
+gnm-3000-4500-0.txt,Undirected random,3000,10,0.0009554220014251769
+gnm-3000-4500-1.txt,Undirected random,3000,-1,1.6281002899631858e-05
+gnm-3000-6000-0.txt,Undirected random,3000,6,0.0002765440003713593
+gnm-3000-6000-1.txt,Undirected random,3000,6,6.163599755382165e-05
+gnm-4000-6000-0.txt,Undirected random,4000,7,0.0008746780004003085
+gnm-4000-6000-1.txt,Undirected random,4000,15,0.00046029299846850336
+gnm-4000-8000-0.txt,Undirected random,4000,5,0.00016115500329760835
+gnm-4000-8000-1.txt,Undirected random,4000,6,4.8501999117434025e-05
+gnm-5000-10000-0.txt,Undirected random,5000,5,0.0002002099936362356
+gnm-5000-10000-1.txt,Undirected random,5000,5,6.732799374731258e-05
+gnm-5000-7500-0.txt,Undirected random,5000,-1,1.306399644818157e-05
+gnm-5000-7500-1.txt,Undirected random,5000,-1,9.59799945121631e-06
+grid-10-0.txt,Undirected grid,100,49,3.300300159025937e-05
+grid-10-1.txt,Undirected grid,100,29,2.9495997296180576e-05
+grid-10-2.txt,Undirected grid,100,-1,4.477995389606804e-06
+grid-25-0.txt,Undirected grid,625,324,0.00015326100401580334
+grid-25-1.txt,Undirected grid,625,123,0.00019681300182128325
+grid-25-2.txt,Undirected grid,625,-1,1.7742997442837805e-05
+grid-5-0.txt,Undirected grid,25,14,1.5459001588169485e-05
+grid-5-1.txt,Undirected grid,25,8,1.3955999747850001e-05
+grid-5-2.txt,Undirected grid,25,-1,4.198001988697797e-06
+grid-50-0.txt,Undirected grid,2500,1249,0.0007795389974489808
+grid-50-1.txt,Undirected grid,2500,521,0.0005705019939341582
+grid-50-2.txt,Undirected grid,2500,-1,2.3133994545787573e-05
+increase-n10-1.txt,Directed Acyclic Graph,10,1,5.360001523513347e-06
+increase-n10-2.txt,Directed Acyclic Graph,10,1,3.5569973988458514e-06
+increase-n10-3.txt,Directed Acyclic Graph,10,-1,1.924003299791366e-06
+increase-n100-1.txt,Directed Acyclic Graph,100,-1,1.3816003047395498e-05
+increase-n100-2.txt,Directed Acyclic Graph,100,1,1.371600228594616e-05
+increase-n100-3.txt,Directed Acyclic Graph,100,-1,4.78899892186746e-06
+increase-n20-1.txt,Directed Acyclic Graph,20,-1,3.7669960875064135e-06
+increase-n20-2.txt,Directed Acyclic Graph,20,1,3.587003448046744e-06
+increase-n20-3.txt,Directed Acyclic Graph,20,-1,3.38700192514807e-06
+increase-n50-1.txt,Directed Acyclic Graph,50,-1,1.4939003449399024e-05
+increase-n50-2.txt,Directed Acyclic Graph,50,1,6.030997610650957e-06
+increase-n50-3.txt,Directed Acyclic Graph,50,1,5.5010023061186075e-06
+increase-n500-1.txt,Directed Acyclic Graph,500,1,6.538400339195505e-05
+increase-n500-2.txt,Directed Acyclic Graph,500,1,5.2940005843993276e-05
+increase-n500-3.txt,Directed Acyclic Graph,500,1,0.00010715299868024886
+increase-n8-1.txt,Directed Acyclic Graph,8,1,9.037001291289926e-06
+increase-n8-2.txt,Directed Acyclic Graph,8,1,3.847002517431974e-06
+increase-n8-3.txt,Directed Acyclic Graph,8,1,4.478002665564418e-06
+rusty-1-17.txt,Undirected word-graph,17,10,1.499900099588558e-05
+rusty-1-2000.txt,Undirected word-graph,2000,-1,7.524002285208553e-06
+rusty-1-2500.txt,Undirected word-graph,2500,-1,3.05499997921288e-06
+rusty-1-3000.txt,Undirected word-graph,3000,14,0.0007286019972525537
+rusty-1-3500.txt,Undirected word-graph,3500,14,0.000984657002845779
+rusty-1-4000.txt,Undirected word-graph,4000,13,0.0014283179989433847
+rusty-1-4500.txt,Undirected word-graph,4500,7,9.524000051897019e-05
+rusty-1-5000.txt,Undirected word-graph,5000,7,0.00012173100549262017
+rusty-1-5757.txt,Undirected word-graph,5757,7,0.0004332309981691651
+rusty-2-2000.txt,Undirected word-graph,2000,5,0.0022711860001436435
+rusty-2-2500.txt,Undirected word-graph,2500,4,0.0012857879992225207
+rusty-2-3000.txt,Undirected word-graph,3000,4,0.003944478994526435
+rusty-2-3500.txt,Undirected word-graph,3500,4,0.004606704002071638
+rusty-2-4000.txt,Undirected word-graph,4000,4,0.005641276002279483
+rusty-2-4500.txt,Undirected word-graph,4500,4,0.003026429003512021
+rusty-2-5000.txt,Undirected word-graph,5000,4,0.0039084909949451685
+rusty-2-5757.txt,Undirected word-graph,5757,4,0.01335853899945505
+ski-illustration.txt,Directed Acyclic Graph,36,8,4.360199818620458e-05
+ski-level10-1.txt,Directed Acyclic Graph,79,-1,2.2840031306259334e-06
+ski-level10-2.txt,Directed Acyclic Graph,76,-1,5.850997695233673e-06
+ski-level10-3.txt,Directed Acyclic Graph,77,-1,4.718996933661401e-06
+ski-level20-1.txt,Directed Acyclic Graph,252,-1,3.335997462272644e-06
+ski-level20-2.txt,Directed Acyclic Graph,253,-1,2.7749993023462594e-06
+ski-level20-3.txt,Directed Acyclic Graph,254,-1,2.2040039766579866e-06
+ski-level3-1.txt,Directed Acyclic Graph,16,5,5.1299939514137805e-06
+ski-level3-2.txt,Directed Acyclic Graph,14,5,5.070003680884838e-06
+ski-level3-3.txt,Directed Acyclic Graph,15,5,4.8389993025921285e-06
+ski-level5-1.txt,Directed Acyclic Graph,29,-1,1.963999238796532e-06
+ski-level5-2.txt,Directed Acyclic Graph,26,-1,1.3719982234761119e-06
+ski-level5-3.txt,Directed Acyclic Graph,27,7,7.463997462764382e-06
+smallworld-10-0.txt,Undirected with high clustering,100,6,5.1998002163600177e-05
+smallworld-10-1.txt,Undirected with high clustering,100,8,1.826500374590978e-05
+smallworld-20-0.txt,Undirected with high clustering,400,8,0.00024735899933148175
+smallworld-20-1.txt,Undirected with high clustering,400,14,6.904099427629262e-05
+smallworld-3-0.txt,Undirected with high clustering,9,4,4.940004146192223e-06
+smallworld-3-1.txt,Undirected with high clustering,9,2,3.215995093341917e-06
+smallworld-30-0.txt,Undirected with high clustering,900,9,0.00039152200042735785
+smallworld-30-1.txt,Undirected with high clustering,900,11,0.00015459299902431667
+smallworld-40-0.txt,Undirected with high clustering,1600,8,0.0007318979987758212
+smallworld-40-1.txt,Undirected with high clustering,1600,13,0.0003440530053921975
+smallworld-50-0.txt,Undirected with high clustering,2500,3,2.601899905130267e-05
+smallworld-50-1.txt,Undirected with high clustering,2500,-1,0.0006102369952714071
+wall-n-1.txt,Undirected 8-node blocks separated,8,1,5.330002750270069e-06
+wall-n-10.txt,Undirected 8-node blocks separated,80,1,2.2040039766579866e-06
+wall-n-100.txt,Undirected 8-node blocks separated,800,1,2.6749985408969223e-06
+wall-n-1000.txt,Undirected 8-node blocks separated,8000,1,2.2531996364705265e-05
+wall-n-10000.txt,Undirected 8-node blocks separated,80000,1,3.446600021561608e-05
+wall-n-2.txt,Undirected 8-node blocks separated,16,1,2.740199852269143e-05
+wall-n-3.txt,Undirected 8-node blocks separated,24,1,3.125998773612082e-06
+wall-n-4.txt,Undirected 8-node blocks separated,32,1,3.1860035960562527e-06
+wall-p-1.txt,Undirected 8-node blocks overlapping,8,1,2.9660004656761885e-06
+wall-p-10.txt,Undirected 8-node blocks overlapping,62,1,2.534994564484805e-06
+wall-p-100.txt,Undirected 8-node blocks overlapping,602,1,3.5460034268908203e-06
+wall-p-1000.txt,Undirected 8-node blocks overlapping,6002,1,1.4607001503463835e-05
+wall-p-10000.txt,Undirected 8-node blocks overlapping,60002,1,3.0677998438477516e-05
+wall-p-2.txt,Undirected 8-node blocks overlapping,14,1,3.72809954569675e-05
+wall-p-3.txt,Undirected 8-node blocks overlapping,20,1,3.607005055528134e-06
+wall-p-4.txt,Undirected 8-node blocks overlapping,26,1,2.2140011424198747e-06
+wall-z-1.txt,Undirected 8-node blocks touching corners,8,1,5.059999239165336e-06
+wall-z-10.txt,Undirected 8-node blocks touching corners,71,1,3.1859963200986385e-06
+wall-z-100.txt,Undirected 8-node blocks touching corners,701,1,3.1460003810934722e-06
+wall-z-1000.txt,Undirected 8-node blocks touching corners,7001,1,1.3826000213157386e-05
+wall-z-10000.txt,Undirected 8-node blocks touching corners,70001,1,3.670899604912847e-05
+wall-z-2.txt,Undirected 8-node blocks touching corners,15,1,2.836400381056592e-05
+wall-z-3.txt,Undirected 8-node blocks touching corners,22,1,2.6650013751350343e-06
+wall-z-4.txt,Undirected 8-node blocks touching corners,29,1,2.143999154213816e-06
