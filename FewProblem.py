@@ -15,7 +15,6 @@ def read_graph_few(path):
 
     for line in lines[2  :  2 + n]:
         parts = line.split()
-        #graph[parts[0]] = {} #turn into defaultdict!
         if len(parts) > 1:
             red.add(parts[0])
 
@@ -23,16 +22,8 @@ def read_graph_few(path):
         if " -> " in line:
             u, v = (x.strip() for x in line.split(" -> "))
             
-            if u in red and v in red:
-                graph[u+"in"][v+"out"]=2
-
-            elif v in red:
-                graph[u][v+"in"] = 0
-                graph[v+"in"][v+"out"] = 1
-
-            elif u in red:
-                graph[u+"in"][u+"out"] = 1
-                graph[u+"out"][v] = 0
+            if v in red:
+                graph[u][v] = 1
 
             else:
                 graph[u][v] = 0
@@ -44,18 +35,9 @@ def read_graph_few(path):
                     b=u
                     u=v
                     v=b
-                    
-                if u in red and v in red:
-                    graph[u+"in"][v+"out"]=2
 
-                elif v in red:
-                    graph[u][v+"in"] = 0
-                    graph[v+"in"][v+"out"] = 1
-
-                elif u in red:
-                    graph[u+"in"][u+"out"] = 1
-                    graph[u+"out"][v] = 0
-
+                if v in red:
+                    graph[u][v] = 1
                 else:
                     graph[u][v] = 0
 
@@ -67,11 +49,6 @@ def dijkstra_few(graph, s, t, red):
     done = set()
     heap = [(0, s)]
 
-    if s in red:
-        s=s+"out"
-    if t in red:
-        t=t+"in"
-
     while heap:
         d, u = heapq.heappop(heap)
         if u in done:
@@ -80,6 +57,8 @@ def dijkstra_few(graph, s, t, red):
 
         if u == t:
             weight_of_path = d
+            if s in red:
+                weight_of_path += 1
             return weight_of_path
 
         for v, weight in graph.get(u, {}).items():
