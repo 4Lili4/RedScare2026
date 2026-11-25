@@ -117,7 +117,7 @@ def longest_path_many(graph_type, graph, s, t, red, m):
     if graph_type == "Directed Acyclic Graph":
         return longest_path_dags_many(graph, s, t, red)
     else:
-        if m <= 300:  # Adjust this threshold based on performance
+        if m <= 150:  # Adjust this threshold based on performance
             return exhaustive_dfs_undirected_many(graph, s, t, red)
         else:
             return "?!"
