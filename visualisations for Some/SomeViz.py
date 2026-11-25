@@ -5,12 +5,14 @@ from itertools import groupby
 import json
 from math import cos, pi, sin
 from pathlib import Path
+import sys
 import webbrowser
 
 import networkx as nx
 from networkx.algorithms.connectivity import build_auxiliary_node_connectivity
 from networkx.algorithms.flow import edmonds_karp
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from SomeProblem import read_graph_some, some_function
 
 
@@ -21,7 +23,7 @@ EXAMPLES = {
     'wall-p-1.txt': 'Flow without rerouting',
     'wall-n-2.txt': 'No valid path through red',
     'grid-5-0.txt': 'Grid graph',
-    'increase-n8-3.txt': 'Directed prefix search',
+    'increase-n8-3.txt': 'DAG reachability shortcut',
 }
 
 
@@ -123,11 +125,14 @@ def trace_flow(G, node, s, t, frame):
 
 def make_trace(filename):
     folder = Path(__file__).resolve().parent
-    graph, s, t, red, *_ = read_graph_some(folder / 'data' / filename)
+    graph, s, t, red, *_ = read_graph_some(folder.parent / 'forked_data' / filename)
     D = nx.DiGraph()
     D.add_nodes_from(graph)
     D.add_edges_from((u, v) for u in graph for v in graph[u])
     undirected = all(u in graph[v] for u in graph for v in graph[u])
+    dag = not undirected and nx.is_directed_acyclic_graph(D)
+    if not undirected and not dag:
+        raise ValueError('The directed Some animation requires a DAG.')
     G = D.to_undirected() if undirected else D
     edges, frames, solution = list(G.edges()), [], None
 
@@ -154,23 +159,35 @@ def make_trace(filename):
         for u, v in zip(shortest, shortest[1:]):
             active.append((u, v))
             frame('Shortest path', f'Check shortest path: {u} → {v}',
-                  'First inspect an ordinary shortest path. If it already visits red, no flow or prefix search is needed.',
+                  'First inspect an ordinary shortest path. If it already visits red, return it immediately.',
                   active=list(active), walk=[u, v])
         for i, node in enumerate(shortest):
             if node in red:
                 solution = finish(shortest[:i + 1], shortest[i:])
                 break
         if solution is None and s != t:
-            candidates = red & (nx.descendants(D, s) | {s}) & (nx.ancestors(D, t) | {t})
+            reachable = nx.descendants(D, s) | {s}
+            can_reach_t = nx.ancestors(D, t) | {t}
+            candidates = red & reachable & can_reach_t
             frame('Red candidate', 'The shortest path misses red',
                   'Eligible red vertices: ' + (', '.join(sorted(candidates)) or 'none') + '. Each must be reachable from s and able to reach t.',
                   active=list(zip(shortest, shortest[1:])))
+            if dag:
+                frame('DAG reachability', 'This directed graph has no cycles',
+                      'Two branches meeting again would create a directed cycle. Reachability is therefore sufficient here.')
+                frame('DAG reachability', f'Find vertices reachable from s = {s}',
+                      'Reachable vertices: ' + ', '.join(sorted(reachable)) + '.',
+                      active=list(nx.bfs_edges(D, s)))
+                frame('DAG reachability', f'Find vertices that can reach t = {t}',
+                      'Search from t using reversed edges. Eligible red vertices lie in both reachability sets: ' + (', '.join(sorted(candidates)) or 'none') + '.',
+                      active=[(v, u) for u, v in nx.bfs_edges(D.reverse(copy=False), t)])
             if undirected:
                 G.add_edges_from([(s, 'T'), (t, 'T')])
                 edges = list(G.edges())
             for node in candidates:
                 frame('Red candidate', f'Try red vertex {node}',
-                      'Find two disjoint branches.' if undirected else 'Try simple s → red prefixes; the suffix must avoid the earlier prefix vertices.',
+                      'Find two disjoint branches.' if undirected else
+                      'This red vertex lies in both reachability sets; its branches cannot overlap in a DAG.',
                       candidate=node)
                 if undirected:
                     pair = trace_flow(G, node, s, t, frame)
@@ -178,37 +195,22 @@ def make_trace(filename):
                         solution = finish(*pair)
                         break
                 else:
-                    for left in nx.shortest_simple_paths(D, s, node):
-                        blocked = set(left[:-1])
-                        state = dict(left=list(zip(left, left[1:])), blocked=sorted(blocked), candidate=node)
-                        frame('Prefix search', 'Try prefix: ' + ' → '.join(left),
-                              'Block every earlier prefix vertex, keeping the chosen red vertex available for the suffix.', **state)
-                        remaining = nx.subgraph_view(D, filter_node=lambda u: u not in blocked)
-                        try:
-                            right = nx.shortest_path(remaining, node, t)
-                        except (nx.NetworkXNoPath, nx.NodeNotFound):
-                            frame('Prefix search', 'This prefix leaves no valid suffix',
-                                  'Continue to the next simple prefix. There is no fixed retry limit.', **state)
-                            continue
-                        suffix = []
-                        for u, v in zip(right, right[1:]):
-                            suffix.append((u, v))
-                            frame('Prefix search', f'Suffix found: {u} → {v}',
-                                  'The suffix follows the directed edges and avoids all blocked prefix vertices.',
-                                  right=list(suffix), walk=[u, v], **state)
-                        solution = finish(left, right)
-                        break
-                    if solution is not None:
-                        break
+                    left = nx.shortest_path(D, s, node)
+                    right = nx.shortest_path(D, node, t)
+                    frame('DAG reachability', 'Recover the two branches',
+                          'Join s → red and red → t. A repeated vertex would imply a directed cycle, so this path is simple.',
+                          left=list(zip(left, left[1:])), right=list(zip(right, right[1:])), candidate=node)
+                    solution = finish(left, right)
+                    break
         if solution is None:
             frame('Result', 'No simple path through red exists',
                   'All eligible red candidates were exhausted. Reaching red and then t would require repeating a vertex.', outcome='failure')
 
-    assert bool(solution) == bool(some_function(graph, s, t, red))
+    assert bool(solution) == bool(some_function('undirected' if undirected else 'directed', graph, s, t, red))
     note = ('Flow steps come from NetworkX’s Edmonds–Karp search. Vertex splitting is internal; the drawing keeps the original vertices.'
-            if undirected else 'Directed search enumerates simple prefixes, then finds a suffix avoiding the prefix. Arrows show the original edge directions; crossed vertices are blocked for the suffix.')
+            if undirected else 'All directed dataset inputs are DAGs. Two reachability searches suffice: a red vertex in both sets gives a simple path because the graph has no directed cycles.')
     return dict(file=filename, description=EXAMPLES[filename], s=s, t=t, red=sorted(red),
-                directed=not undirected, vertices=len(graph), edge_count=D.number_of_edges() // 2 if undirected else D.number_of_edges(),
+                directed=not undirected, dag=dag, vertices=len(graph), edge_count=D.number_of_edges() // 2 if undirected else D.number_of_edges(),
                 positions=layout(filename, list(graph)), edges=edges, frames=frames, note=note,
                 solution=solution)
 

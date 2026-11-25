@@ -3,7 +3,7 @@ import networkx as nx
 
 
 def read_graph_some(path):
-    """Return (graph, s, t, red, n) where graph[u] = {v: capacity}."""
+    """Return (graph, s, t, red, n, m) where graph[u] = {v: capacity}."""
     lines = [l.strip() for l in Path(path).read_text().splitlines() if l.strip()]
     n, m, r = map(int, lines[0].split())
     s, t = lines[1].split()
@@ -28,7 +28,7 @@ def read_graph_some(path):
 
 
 def some_function(graph_type, graph, s, t, red, m=None):
-    """Return one simple path through a red vertex, or an empty list."""
+    """Find a simple path through red; directed inputs must be DAGs."""
     G = nx.DiGraph()
     G.add_nodes_from(graph)
     G.add_edges_from((u, v) for u in graph for v in graph[u])
@@ -65,14 +65,10 @@ def some_function(graph_type, graph, s, t, red, m=None):
                 right = next(p[:-1] for p in paths if p[-2] == t)
                 return result(left[::-1], right)
     else:
-        for node in candidates:
-            # Try every simple prefix; the suffix must avoid its earlier vertices.
-            for left in nx.shortest_simple_paths(G, s, node):
-                blocked = set(left[:-1])
-                remaining = nx.subgraph_view(G, filter_node=lambda u: u not in blocked)
-                try:
-                    right = nx.shortest_path(remaining, node, t)
-                except (nx.NetworkXNoPath, nx.NodeNotFound):
-                    continue
-                return result(left, right)
+        if not nx.is_directed_acyclic_graph(G):
+            raise ValueError('The directed Some method requires a DAG.')
+        # In a DAG, an overlap between the two branches would form a cycle.
+        if candidates:
+            node = next(iter(candidates))
+            return result(nx.shortest_path(G, s, node), nx.shortest_path(G, node, t))
     return []

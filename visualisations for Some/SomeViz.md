@@ -20,13 +20,12 @@ flowchart TD
     J --> Y
     I -- No, more red vertices --> H
     I -- No candidates left --> N
-    F -- No --> K[Enumerate every simple s-to-red prefix]
-    K --> L[Block its vertices except red, then search red-to-t]
-    L --> M{Suffix exists?}
-    M -- Yes --> O[Join prefix and suffix at red]
-    O --> Y
-    M -- No, more prefixes or red vertices --> K
-    M -- All exhausted --> N
+    F -- No --> P{Directed graph is acyclic?}
+    P -- Yes --> Q{Any eligible red vertex?}
+    Q -- Yes --> R[Join s-to-red and red-to-t paths]
+    R --> Y
+    Q -- No --> N
+    P -- No --> K[Raise an unsupported-input error]
 ```
 
 For an undirected graph, the temporary target has only two neighbors: `s` and
@@ -34,9 +33,18 @@ For an undirected graph, the temporary target has only two neighbors: `s` and
 different neighbors. Removing that target gives two branches sharing only red.
 NetworkX handles the internal vertex splitting and flow search.
 
-For a directed graph, the solver tries every simple prefix until it finds one
-that leaves room for the suffix. It has no retry limit, so the answer stays exact,
-but this case can take a long time.
+For a directed acyclic graph (DAG), two reachability searches suffice: find
+vertices reachable from `s`, and vertices that can reach `t` using reversed
+edges. A red vertex in both sets gives a valid simple path. If the two branches
+shared another vertex, they would form a directed cycle, which a DAG cannot
+contain. This branch runs in **O(n + m)**. All 31 directed inputs in this dataset
+are DAGs.
+
+All 154 notebook inputs were audited from their raw edges: 123 are undirected,
+and all 31 directed graphs are DAGs (18 `increase` and 13 `ski`). Every directed
+edge points forward in a verified topological order. The directed implementation
+therefore uses only the DAG method. Its DAG check raises an error if a cyclic
+graph reaches this method; there is no exhaustive fallback.
 
 ## Run the animation
 
@@ -47,16 +55,16 @@ or the step slider. Switching graphs stops playback and starts at the first step
 To regenerate the trace from NetworkX and open it:
 
 ```python
-%run SomeViz.py
+%run "visualisations for Some/SomeViz.py"
 ```
 
 Or, from a terminal with the project requirements installed:
 
 ```sh
-python SomeViz.py
+python "visualisations for Some/SomeViz.py"
 ```
 
-The picker includes these inputs from `data/`:
+The picker includes these inputs from `forked_data/`:
 
 | Graph | What it shows |
 | --- | --- |
@@ -66,9 +74,9 @@ The picker includes these inputs from `data/`:
 | `wall-p-1.txt` | Two flow branches succeed without cancelling any edge. |
 | `wall-n-2.txt` | Only one flow unit fits; no simple path through red exists. |
 | `grid-5-0.txt` | A grid whose shortest path already visits red. |
-| `increase-n8-3.txt` | Directed prefixes and suffixes; crossed vertices are blocked for the suffix. |
+| `increase-n8-3.txt` | Two reachability searches find a valid red vertex in a DAG. |
 
 Flow animations use actual NetworkX augmentations. Internal split vertices
 are omitted to keep the drawing readable. Directed graphs show their original
-edge arrows and use the separate exhaustive prefix search from `SomeProblem.py`.
+edge arrows and use the DAG reachability method.
 Every example's final outcome is checked against that solver when regenerating.
