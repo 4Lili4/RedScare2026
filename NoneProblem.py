@@ -24,12 +24,12 @@ def read_graph_none(path):
         if " -> " in line:
             u, v = (x.strip() for x in line.split(" -> "))
             if u in graph and v in graph:
-                graph[u][v] = 1
+                graph[u][v] = 0
         else:
             u, v = (x.strip() for x in line.split(" -- "))
             if u in graph and v in graph:
-                graph[u][v] = 1
-                graph[v][u] = 1
+                graph[u][v] = 0
+                graph[v][u] = 0
 
     return graph, s, t, red, n, m
 
