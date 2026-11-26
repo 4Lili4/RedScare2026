@@ -1,6 +1,4 @@
 Instance name	n	A	F	M	N	S
-G-ex	8	True	0	2	3	True
-P3	3	True	1	1	-1	True
 bht	5757	False	0	?!	6	True
 common-1-100	100	False	-1	-1	-1	False
 common-1-1000	1000	False	-1	?!	-1	False
@@ -32,11 +30,12 @@ common-2-50	50	False	-1	-1	-1	False
 common-2-500	500	True	1	?!	4	True
 common-2-5000	5000	True	1	?!	4	True
 common-2-5757	5757	True	1	?!	4	True
-dodecahedron	20	False	2	19	1	True
+dodecahedron	20	False	2	20	1	True
+G-ex	8	True	0	2	3	True
 gnm-10-15-0	10	False	0	1	1	True
-gnm-10-15-1	10	True	1	4	1	True
-gnm-10-20-0	10	False	1	0	3	True
-gnm-10-20-1	10	True	2	4	3	True
+gnm-10-15-1	10	True	1	5	1	True
+gnm-10-20-0	10	False	1	1	3	True
+gnm-10-20-1	10	True	2	5	3	True
 gnm-1000-1500-0	1000	False	1	?!	-1	True
 gnm-1000-1500-1	1000	False	2	?!	-1	True
 gnm-1000-2000-0	1000	False	0	?!	7	True
@@ -87,6 +86,7 @@ increase-n500-3	500	True	1	16	1	True
 increase-n8-1	8	True	1	2	1	True
 increase-n8-2	8	True	1	1	1	True
 increase-n8-3	8	True	0	1	1	True
+P3	3	True	1	1	-1	True
 rusty-1-17	17	False	0	1	10	True
 rusty-1-2000	2000	False	-1	?!	-1	False
 rusty-1-2500	2500	False	-1	?!	-1	False
@@ -121,7 +121,7 @@ smallworld-10-0	100	False	0	?!	6	True
 smallworld-10-1	100	True	0	?!	8	True
 smallworld-20-0	400	False	0	?!	8	True
 smallworld-20-1	400	True	1	?!	14	True
-smallworld-3-0	9	False	1	2	4	True
+smallworld-3-0	9	False	1	3	4	True
 smallworld-3-1	9	False	1	4	2	True
 smallworld-30-0	900	False	0	?!	9	True
 smallworld-30-1	900	True	1	?!	11	True

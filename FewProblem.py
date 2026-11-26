@@ -1,5 +1,5 @@
 from pathlib import Path
-from collections import deque, defaultdict
+from collections import defaultdict
 import heapq
 
 
