@@ -74,4 +74,4 @@ Once you have created and activated the environment, you can run the code.
 
 ## Running the code
 Once you have created and activated the RedScare-environment, all our code is runnable through one neat notebook via function imports.
-Each problem is solved with functions in a .py file named for the problem it solves. The functions from these files are then imported in the **master_notebook.ipynb**, making everything run smoothly from this one notebook. The file can be run from start to finish, and will automatically recreate **results.txt** as well as the more detailed files in **/results/**.
+Each problem is solved with functions in a .py file named for the problem it solves. The functions from these files are then imported in the **all_code_runnable.ipynb**, making everything run smoothly from this one notebook. The file can be run from start to finish, and will automatically recreate **results.txt** as well as the more detailed files in **/results/**.
