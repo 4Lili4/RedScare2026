@@ -43,7 +43,7 @@ def read_graph_many(path):
     return graph, s, t, red, n, m
 
 
-def exhaustive_dfs_undirected_many(graph, s, t, red): # K is the number of red vertices
+def exhaustive_dfs_undirected_many(graph, s, t, red):
     n = len(graph)
     visited = {s}
     path = [s]
@@ -108,7 +108,7 @@ def longest_path_dags_many(graph, s, t, red):
                 dist[v] = max(dist[v], dist[u] + weight)
 
     if dist.get(t, float("-inf")) == float("-inf"):
-        return False
+        return -1
 
     return dist[t] + (1 if s in red else 0)
 
