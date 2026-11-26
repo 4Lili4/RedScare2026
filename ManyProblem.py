@@ -68,8 +68,7 @@ def exhaustive_dfs_undirected_many(graph, s, t, red): # K is the number of red v
         if weight + (n - len(visited)) <= best_weight:
             return
         
-        # Sort the neighbors to prioritise the ones with the highest weight first (red vertices)
-        for v, w in sorted(graph[u].items(), key=lambda x: -x[1]):
+        for v, w in graph[u].items():
             if v not in visited:
                 visited.add(v)
                 path.append(v)
@@ -79,7 +78,8 @@ def exhaustive_dfs_undirected_many(graph, s, t, red): # K is the number of red v
                 path.pop()
                 visited.remove(v)
 
-    dfs(s, 0)
+    init_w = 1 if s in red else 0
+    dfs(s, init_w)
     return best_weight
 
 def longest_path_dags_many(graph, s, t, red):
@@ -117,7 +117,7 @@ def longest_path_many(graph_type, graph, s, t, red, m):
     if graph_type == "Directed Acyclic Graph":
         return longest_path_dags_many(graph, s, t, red)
     else:
-        if m <= 150:  # Adjust this threshold based on performance
+        if m <= 240:  # Adjust this threshold based on performance
             return exhaustive_dfs_undirected_many(graph, s, t, red)
         else:
             return "?!"
