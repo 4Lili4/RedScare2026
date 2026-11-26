@@ -34,7 +34,7 @@
 
 # How to recreate our results
 
-## RedScare environment
+## RedScare_grpV environment
 In your preferred terminal, navigate to this repository. Then choose between the following:
 
 ### Creating an environment with Conda
@@ -50,28 +50,30 @@ Requires Python 3.11+
 #### Windows (PowerShell)
 paste the following into your terminal window and run the command:
 ```
-py -m venv .venv 
-.venv\Scripts\Activate.ps1
+py -m venv RedScare_grpV
+RedScare_grpV\Scripts\Activate.ps1
 pip install -r req.txt
 ```
 #### Windows (command prompt)
 paste the following into your terminal window and run the command:
 ```
-py -m venv .venv 
-.venv\Scripts\Activate.bat
+py -m venv RedScare_grpV
+RedScare_grpV\Scripts\activate.bat
 pip install -r req.txt
 ```
 
 #### macOS / Linux (bash)
 paste the following into your terminal window and run the command:
 ``` 
-python -m venv .venv
-source .venv/bin/activate
+python3 -m venv RedScare_grpV
+source RedScare_grpV/bin/activate
 pip install -r req.txt
 ```
+
+Then start Jupyter with `jupyter notebook` and open **all_code_runnable.ipynb**.
 _______________________________________________
 Once you have created and activated the environment, you can run the code.
 
 ## Running the code
-Once you have created and activated the RedScare-environment, all our code is runnable through one neat notebook via function imports.
-Each problem is solved with functions in a .py file named for the problem it solves. The functions from these files are then imported in the **master_notebook.ipynb**, making everything run smoothly from this one notebook. The file can be run from start to finish, and will automatically recreate **results.txt** as well as the more detailed files in **/results/**.
+Once you have created and activated the RedScare_grpV environment, all our code is runnable through one neat notebook via function imports.
+Each problem is solved with functions in a .py file named for the problem it solves. The functions from these files are then imported in the **all_code_runnable.ipynb**, making everything run smoothly from this one notebook. The file can be run from start to finish, and will automatically recreate **results.txt** as well as the more detailed files in **/results/**.

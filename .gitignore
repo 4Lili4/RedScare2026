@@ -2,3 +2,7 @@
 *:Zone.Identifier
 
 __pycache__/
+
+# Local pip environment
+RedScare_grpV/
+.venv/

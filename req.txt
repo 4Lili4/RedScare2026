@@ -1,2 +1,6 @@
+# pip environment for RedScare_grpV
+# Install with: pip install -r req.txt
 networkx>=3.4,<4
-pandas
+pandas>=2.0,<3
+notebook>=7.0,<8
+ipykernel>=6.0
